@@ -4,6 +4,10 @@ webpackJsonp([0],[
 
 	'use strict';
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
 	var _angular = __webpack_require__(1);
 
 	var _angular2 = _interopRequireDefault(_angular);
@@ -26,13 +30,8 @@ webpackJsonp([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	_angular2.default.module('simpleForm', []);
+	exports.default = _angular2.default.module('simpleForm', []).directive('form', _form2.default).directive('select', _select2.default).directive('textarea', _textarea2.default).directive('fileInput', _fileInput2.default);
 	/* injects from baggage-loader */
-
-	_angular2.default.module('simpleForm').directive('form', _form2.default);
-	_angular2.default.module('simpleForm').directive('select', _select2.default);
-	_angular2.default.module('simpleForm').directive('textarea', _textarea2.default);
-	_angular2.default.module('simpleForm').directive('fileInput', _fileInput2.default);
 
 /***/ },
 /* 1 */,
