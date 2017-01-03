@@ -1,0 +1,10 @@
+node_modules
+src
+.gitignore
+.npmignore
+README.md
+webpack.config.js
+
+.idea
+.DS_Store
+*.log

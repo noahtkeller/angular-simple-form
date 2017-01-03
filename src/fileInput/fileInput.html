@@ -1,0 +1,10 @@
+<div ng-mouseleave="hover($event)">
+  <div ng-show="files.length === 0" class="placeholder">{{placeholder}}</div>
+  <div ng-repeat="f in files track by $index" class="listItem" ng-class="{error: f.error, remove: f.remove}">
+    <span class="x" ng-mouseup="focus($event); hover($event); f.removeFile($index);" ng-mousedown="focus($event);"
+          ng-mouseenter="f.remove = true; hover($event);" ng-mouseleave="f.remove = false;hover($event);">&times;</span>
+    <span class="fileName">{{f.name}}</span>
+  </div>
+</div>
+<span class="plus">&plus;</span>
+<input type="file" name="{{name}}" class="fileInput-invisible" multiple ng-model="fileInputContents"/>
